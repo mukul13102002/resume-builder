@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dynamic Resume Builder</h1>
+    </header>
+
+    <section id="resume-builder">
+        <form id="resume-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about" rows="3" required></textarea>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required>
+
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <button type="button" id="preview-btn">Preview Resume</button>
+            <button type="submit">Download as PDF</button>
+        </form>
+
+        <div id="resume-preview">
+            <h2 id="resume-name"></h2>
+            <p id="resume-email"></p>
+            <p id="resume-phone"></p>
+            <h3>About Me</h3>
+            <p id="resume-about"></p>
+            <h3>Education</h3>
+            <p id="resume-education"></p>
+            <h3>Work Experience</h3>
+            <p id="resume-experience"></p>
+            <h3>Skills</h3>
+            <p id="resume-skills"></p>
+        </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
